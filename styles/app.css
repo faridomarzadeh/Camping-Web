@@ -20,6 +20,25 @@ body{
     line-height: 1.6;
 }
 
+
+/* 
+
+ -- Components --
+
+*/
+.btn {
+    width: 18rem;
+    height: 4rem;
+    background-color: var(--dark);
+    color: var(--white);
+    border-radius: 10rem;
+    font-family: "Roboto Medium";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+}
 /* 
 
  -- Reset Style --
@@ -30,23 +49,41 @@ a {
     text-decoration: none;
 }
 
+/* 
+================
+    Header
+================
+*/
+
 .header {
     background: linear-gradient(rgba(59,55,53,0.5),rgba(59,55,53,0.5)), url('../images/header-bg.jpg');
     background-size: cover;
     background-position:center;
-    min-height: 55rem;
+    min-height: 85vh;
     border-bottom-left-radius: 8rem;
     border-bottom-right-radius: 8rem;
 
 }
 
+/* 
+================
+    Nav
+================
+*/
+
 .nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2.5rem 0;
+    padding: 2.5rem 0 0 0;
 
 }
+
+/* 
+================
+    App Menu
+================
+*/
 .app-logo{
     display: block;
     width: 5.5rem;
@@ -62,6 +99,14 @@ a {
     display: flex;
     align-items: center;
 }
+
+/* 
+
+========================
+    Main Menu (Desktop)
+========================
+
+*/
 .menu{
     display: none;
 
@@ -97,24 +142,40 @@ a {
     z-index: -1;
     margin: 0 auto;
 }
-.header__links{
+
+/* 
+
+==================
+    Header Links
+==================
+
+*/
+.nav__links{
     display: none;
 }
-.header__link{
+.nav__link{
     margin-left: 1.5rem;
     color: var(--white);
     font-family: "Roboto Medium";
 }
-.header__link--border{
+.nav__link--border{
     border: 1px solid var(--white);
     border-radius: 10rem;
     padding: 1rem 2.5rem;
     transition: all 100ms ease-in;
 }
-.header__link--border:hover {
+.nav__link--border:hover {
     background-color: var(--white);
     color: var(--dark);
 }
+
+/* 
+
+==================
+    Nav Menu
+==================
+
+*/
 .nav-menu{
     position: fixed;
     background-color: #3B3735;
@@ -129,6 +190,14 @@ a {
 .nav-menu--open {
     left: 0;
 }
+
+/* 
+
+==================
+    Mobile Menu
+==================
+
+*/
 .mobile-menu{
     margin-bottom: 3rem;
 
@@ -156,6 +225,14 @@ a {
 }
 .nav-menu__link--border{
 }
+
+/* 
+
+==================
+    Nav Btn
+==================
+
+*/
 .nav__btn{
     background-color: #fff;
     width: 5.5rem;
@@ -206,4 +283,26 @@ a {
 .nav__btn--open .nav__btn-line::after{
     width: 4rem;
     transform: rotate(-45deg) translateY(-9px) translateX(2px);
+}
+
+.header-content{
+    text-align: center;
+    color: var(--white);
+    margin-top: 6rem;
+}
+.header-content__title{
+    font-family: "Archivo Black";
+    font-size: 4.5rem;
+    line-height: 1.2;
+    max-width: 35rem;
+    margin: 0 auto 3rem auto;
+}
+.header-content__caption{
+    max-width: 34rem;
+    margin: 0 auto 2rem auto;
+
+}
+.header-content__link{
+    background-color: var(--orange);
+    font-size: 1.8rem;
 }
