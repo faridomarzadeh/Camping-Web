@@ -3,6 +3,10 @@
     --white: #fff;
     --grey: #D2D2D2;
     --dark: #3B3735;
+    --light-pink: #FAF4F2;
+    --primary-font: "Roboto", Arial, Helvetica, sans-serif;
+    --primary-font-md: "Roboto Medium", Arial, Helvetica, sans-serif;
+    --secondary-font: "Archivo Black", Arial, Helvetica, sans-serif;
 }
 
 html{
@@ -15,9 +19,11 @@ html{
 }
 
 body{
-    font-family: "Roboto";
+    font-family: var(--primary-font);
     font-size: 1.6rem;
     line-height: 1.6;
+    background-color: var(--light-pink);
+
 }
 
 
@@ -32,7 +38,7 @@ body{
     background-color: var(--dark);
     color: var(--white);
     border-radius: 10rem;
-    font-family: "Roboto Medium";
+    font-family: var(--primary-font-md);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -156,7 +162,7 @@ a {
 .nav__link{
     margin-left: 1.5rem;
     color: var(--white);
-    font-family: "Roboto Medium";
+    font-family: var(--primary-font-md);
 }
 .nav__link--border{
     border: 1px solid var(--white);
@@ -178,7 +184,7 @@ a {
 */
 .nav-menu{
     position: fixed;
-    background-color: #3B3735;
+    background-color: var(--dark);
     padding: 2.5rem;
     top: 0;
     left: -25rem;
@@ -190,7 +196,15 @@ a {
 .nav-menu--open {
     left: 0;
 }
-
+.nav-menu__title {
+    color: var(--white);
+    font-size: 2rem;
+    font-family: var(--secondary-font);
+    border-bottom: 1px solid var(--white);
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
 /* 
 
 ==================
@@ -209,6 +223,28 @@ a {
 .mobile-menu__link{
     color: var(--white);
     font-size: 1.8rem;
+    position: relative;
+    transition: all 250ms ease-in-out;
+}
+
+.mobile-menu__link::before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0.3rem;
+    border-radius: 10rem;
+    background-color: var(--orange);
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    transition: all 250ms ease-in-out;
+}
+.mobile-menu__link:hover {
+    padding-left: 2.2rem;
+}
+.mobile-menu__link:hover::before{
+    width: 1.6rem;
 }
 .nav-menu__links{
     display: flex;
@@ -221,7 +257,12 @@ a {
     color: var(--white);
     flex-grow: 1;
     border: 1px solid var(--white);
+    transition: all 100ms ease-in;
 
+}
+.nav-menu__link:hover {
+    color: var(--dark);
+    background-color: var(--white);
 }
 .nav-menu__link--border{
 }
@@ -291,7 +332,7 @@ a {
     margin-top: 6rem;
 }
 .header-content__title{
-    font-family: "Archivo Black";
+    font-family: var(--secondary-font);
     font-size: 4.5rem;
     line-height: 1.2;
     max-width: 35rem;
@@ -305,4 +346,49 @@ a {
 .header-content__link{
     background-color: var(--orange);
     font-size: 1.8rem;
+}
+
+/* 
+
+======================
+    Services
+======================
+
+*/
+.main{
+    padding: 4rem 0;
+}
+.services{
+    text-align: center;
+    color: var(--dark);
+    margin-top: -15rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: -1rem;
+    margin-right: -1rem;
+}
+.service{
+    background-color: var(--white);
+    border-radius: 2rem;
+    height: 26rem;
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 0 4rem;
+    flex-grow: 1;
+    margin: 1rem;
+}
+.service__img{
+    display: block;
+}
+.service__title{
+    font-family: var(--secondary-font);
+    font-size: 1.8rem;
+    margin: 1.5rem 0 0.6rem 0;
+}
+.service__caption{
 }
