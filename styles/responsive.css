@@ -3,6 +3,9 @@
     .header-content__title{
         font-size: 4rem;
     }
+    .destinations__title{
+        font-size: 2.4rem;
+    }
 }
 
 @media (min-width: 576px){
