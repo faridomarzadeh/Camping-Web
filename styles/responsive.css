@@ -6,6 +6,9 @@
     .destinations__title{
         font-size: 2.4rem;
     }
+    .newsletter__title {
+        max-width: 16rem;
+    }
 }
 
 @media (min-width: 576px){
@@ -22,6 +25,17 @@
     .nav-menu{
         display: none;
     }
+    .newsletter {
+        flex-direction: row;
+    }
+    .newsletter__content{
+        flex-basis: 60%;
+        padding-right: 2rem;
+        text-align: left;
+    }
+    .newsletter__banner{
+        flex-basis: 40%;
+    }
 }
 
 @media (min-width:992px) {
@@ -31,12 +45,29 @@
     .header-content__caption{
         max-width: 50rem;
     }
+    .newsletter__content{
+        padding-right: 4rem;
+    }
+    .newsletter__title{
+        margin-bottom: 0;
+    }
 }
 
 @media (min-width:1200px) {
-
+    .newsletter {
+        justify-content: space-between;
+    }
+    .newsletter__content{
+        flex-basis: auto;
+        width: 60rem;
+    }
+    .newsletter__banner{
+        flex-basis: auto;
+    }
 }
 
 @media (min-width:1400px) {
-
+    .newsletter {
+        padding: 3rem 6rem;
+    }
 }
