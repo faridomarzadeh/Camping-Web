@@ -1,3 +1,6 @@
-# Camping-Web
+# Camping Web
+## features:
+- Responsive
+- Mobile First implementation
 ## visit website live at:
-https://faridomarzadeh.github.io/Camping-Web/
+- https://faridomarzadeh.github.io/Camping-Web/
