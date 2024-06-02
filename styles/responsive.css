@@ -12,10 +12,15 @@
 }
 
 @media (min-width: 576px){
-
+    .container {
+        width: 54rem;
+    }
 }
 
 @media (min-width: 768px){
+    .container {
+        width: 72rem;
+    }
     .nav__btn {
         display: none;
     }
@@ -56,9 +61,18 @@
         background-size: cover;
         bottom: 30rem;
     }
+    .footer{
+        text-align: left;
+    }
+    .footer-list{
+        width: 16rem;
+    }
 }
 
 @media (min-width:992px) {
+    .container {
+        width: 92rem;
+    }
     .header__links {
         display: block;
     }
@@ -91,6 +105,9 @@
 }
 
 @media (min-width:1200px) {
+    .container {
+        width: 114rem;
+    }
     .newsletter {
         justify-content: space-between;
     }
@@ -111,6 +128,9 @@
 }
 
 @media (min-width:1400px) {
+    .container {
+        width: 137rem;
+    }
     .newsletter {
         padding: 3rem 6rem;
     }
