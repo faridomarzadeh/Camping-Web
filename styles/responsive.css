@@ -36,6 +36,26 @@
     .newsletter__banner{
         flex-basis: 40%;
     }
+    .newsletter::before{
+        display: block;
+        background-size: cover;
+        top: -15rem;
+        left: -5rem;
+        bottom: 0;
+    }
+    .destinations::before{
+        width: 80rem;
+        height: 80rem;
+        background-size: cover;
+        right: -50rem;
+        top: -15rem;
+    }
+    .destinations::after{
+        width: 80rem;
+        height: 80rem;
+        background-size: cover;
+        bottom: 30rem;
+    }
 }
 
 @media (min-width:992px) {
@@ -51,6 +71,23 @@
     .newsletter__title{
         margin-bottom: 0;
     }
+    .footer__container{
+        display: flex;
+        justify-content:space-between;
+    }
+    .footer__content-wrapper{
+        max-width: 35rem;
+    }
+    .footer__scroll{
+        left: auto;
+        margin: auto;
+    }
+    .newsletter::before{
+        top: -25rem;
+        left: -25rem;
+        width: 80rem;
+        height: 80rem;
+    }
 }
 
 @media (min-width:1200px) {
@@ -64,10 +101,23 @@
     .newsletter__banner{
         flex-basis: auto;
     }
+    .footer__content-wrapper{
+        max-width: 60rem;
+    }
+    .newsletter::before{
+        top: -25rem;
+        left: -10rem;
+    }
 }
 
 @media (min-width:1400px) {
     .newsletter {
         padding: 3rem 6rem;
+    }
+    .footer__container{
+        justify-content: space-between;
+    }
+    .footer-list{
+        width: 20rem;
     }
 }
